@@ -106,23 +106,23 @@ def _build(dstdir, font, permutations):
 
         mkdir_p(join(variant_dir, 'TTF'))
         mkdir_p(join(variant_dir, 'OTF'))
-        mkdir_p(join(variant_dir, 'Webfonts'))
+        # mkdir_p(join(variant_dir, 'Webfonts'))
 
         # Output the files and cleanup
         fnt.generate(join(variant_dir, 'TTF', name + '.ttf'), flags=("opentype", "dummy-dsig"))
         fnt.generate(join(variant_dir, 'OTF', name + '.otf'), flags=("opentype", "dummy-dsig"))
-        fnt.generate(join(variant_dir, 'Webfonts', name + '.svg'))
+        # fnt.generate(join(variant_dir, 'Webfonts', name + '.svg'))
         fnt.close()
 
         # Output other formats and the CSS declaration
-        subprocess.check_call(
-            [join(SCRIPTS, 'generate-other-formats'), font],
-            cwd=variant_dir
-        )
-        subprocess.check_call(
-            [join(SCRIPTS, 'generate-css-decl'), font],
-            cwd=variant_dir
-        )
+        # subprocess.check_call(
+        #     [join(SCRIPTS, 'generate-other-formats'), font],
+        #     cwd=variant_dir
+        # )
+        # subprocess.check_call(
+        #     [join(SCRIPTS, 'generate-css-decl'), font],
+        #     cwd=variant_dir
+        # )
 
 def build(dstdir, font):
     _build(dstdir, font, permutations())

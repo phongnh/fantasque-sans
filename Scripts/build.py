@@ -33,12 +33,12 @@ conflicting(
 #     option('XtraSmall', '13px', Line(x, x)),
 #     option('Small', '14px', Line(x, x)),
 # #   option('medium', 15px', Line(1650, 398)),
-    option('LargeLineHeight', 'Large Line Height', Line(1750, 498)),
+# #   option('LargeLineHeight', 'Large Line Height', Line(1750, 498)),
 #     option('XtraLarge', '17px', Line(x, x))
 )
 
 # ss01
-option('NoLoopK', 'No loop k', SwapLookup('ss01'))
+# option('NoLoopK', 'No loop k', SwapLookup('ss01'))
 # option('Dollar', 'Alt $', Swap("dollar", "dollar.empty"))
 # # ss03
 # option('0', 'Alt 0', Swap("zero", "zero.dot"))

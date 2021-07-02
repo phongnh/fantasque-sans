@@ -11,7 +11,7 @@ for variant in $(find "$variants"/* -maxdepth 0 -type d); do
     cd "$variant"
     echo "Zipping $name"
     zip -r "../FantasqueSansMono-$name.zip" * > /dev/null || exit 1
-    echo "Targzing $name"
-    tar czvf "../FantasqueSansMono-$name.tar.gz" * > /dev/null || exit 1
+    # echo "Targzing $name"
+    # tar czvf "../FantasqueSansMono-$name.tar.gz" * > /dev/null || exit 1
   )
 done
