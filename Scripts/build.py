@@ -41,7 +41,7 @@ conflicting(
     # option('Large', 'Large', Line(2000, 748)),
     option('Large', 'Large', [Line(2025, 773), SwapLookup('ss01')]),
     # option('ComicMono', 'ComicMono', [Line(2050, 798), SwapLookup('ss01')]),
-    option('XtraLarge', 'Xtra Large', [Line(2125, 873), SwapLookup('ss01')])
+    option('XLarge', 'XLarge', [Line(2125, 873), SwapLookup('ss01')])
     # option('XtraLarge', 'Xtra Large', Line(2150, 898))
 )
 
