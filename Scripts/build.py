@@ -36,7 +36,7 @@ conflicting(
 # #   option('LargeLineHeight', 'Large Line Height', Line(1750, 498)),
 #     option('XtraLarge', '17px', Line(x, x))
     # option('Medium', 'Medium', Line(1850, 598)),
-    option('Medium', 'Medium', Line(1875, 623)),
+    # option('Medium', 'Medium', Line(1875, 623)),
     # option('Medium', 'Medium', Line(1975, 723)),
     # option('Large', 'Large', Line(2000, 748)),
     option('Large', 'Large', Line(2025, 773)),
