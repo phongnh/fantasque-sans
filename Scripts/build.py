@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python3
 # Adapted from https://github.com/larsenwork/monoid
 # Copyright (c) 2015, Andreas Larsen and contributors.
 # vim: sts=4 sw=4 ts=4 et

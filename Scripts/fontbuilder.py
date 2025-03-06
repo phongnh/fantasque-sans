@@ -3,7 +3,10 @@
 # LICENSE: MIT
 # vim: sts=4 sw=4 ts=4 et
 
-from past.builtins import xrange
+try:
+    from past.builtins import xrange
+except:
+    xrange = range
 
 import fontforge
 from itertools import compress
