@@ -1,16 +1,19 @@
-FROM ubuntu:18.04
+FROM ubuntu:24.04
 
-RUN apt-get update && \
-    apt-get install software-properties-common -y && \
-    add-apt-repository ppa:fontforge/fontforge -y && \
-    apt-get update && \
+RUN set -eux; \
+    apt-get dist-clean; \
+    apt-get update; \
+    apt-get dist-upgrade -y; \
+    apt-get autoremove -y; \
     apt-get install -y --no-install-recommends \
-      fontforge \
-      woff-tools \
-      woff2 \
-      ttfautohint \
-      make \
-      zip
+        fontforge \
+        woff-tools \
+        woff2 \
+        ttfautohint \
+        make \
+        zip \
+    ; \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /fantasque
 
